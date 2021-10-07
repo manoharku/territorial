@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-direction:reverse;
+}
+
+@keyframes example {
+  0%   {
+      background-color: red;
+      transform:translate(0px);    
+    }
+  10%  {
+      background-color: yellow;
+    transform:translate(200px,0px);
+    }
+  20%  {
+      background-color: blue;
+      transform:translate(200px,200px);
+      border-radius:50px;
+    }
+    30% {
+      background-color: yellow;
+      transform:translate(400px,200px);
+      border-radius:0px;   
+    }
+     40% {
+      background-color: grey;
+      transform:translate(400px,0px); 
+      border-radius:50px;  
+    }
+     50% {
+      background-color: brown;
+      transform:translate(600px,0px); 
+      border-radius:0px;   
+    }
+    60% {
+      background-color: grey;
+      transform:translate(400px,0px);   
+      border-radius:0px; 
+    }
+    70% {
+      background-color: yellow;
+      transform:translate(400px,200px);  
+      border-radius:50px; 
+    }
+    80% {
+      background-color: blue;
+      transform:translate(200px,200px); 
+      border-radius:0px; 
+    }
+     90% {
+      background-color: yellow;
+      transform:translate(200px,0px);  
+      border-radius:50px;
+    } 
+    100% {
+      background-color: red;
+      transform:translate(0px);    
+      border-radius:0px;
+    }
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+</body>
+</html>
+
